@@ -1,0 +1,90 @@
+.main{
+    background-image: -webkit-linear-gradient(left bottom, #6d327c, #485DA6, #00a1ba, #00BF98, #36C486);
+    background-image: -o-linear-gradient(left bottom, #6d327c, #485DA6, #00a1ba, #00BF98, #36C486);
+    background-image: linear-gradient(to right top, #6d327c, #485DA6, #00a1ba, #00BF98, #36C486);
+}
+.main.loading .main__loading{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.main__loading{
+    display: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 998;
+    background-color: azure;
+}
+.main__content{
+    position: relative;
+}
+.main__parallax{
+    position: absolute;
+    font-size: 200px;
+    font-weight: 600;
+    color: rgba(255,255,255,.3);
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+.main__parallax_name{
+    left: -100px;
+    top: 0px;
+}
+.main__parallax_last-name{
+    top: 300px;
+    right: -32%;
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+}
+.main__title-wrap{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.main__title-wrap h2, 
+.main__title-wrap h3{
+    margin: 0;
+}
+.main__title-image{
+    max-width: 30px;
+    margin-left: 10px;
+}
+.main__title-image_revert{
+    -webkit-transform: scaleX(-1);
+        -ms-transform: scaleX(-1);
+            transform: scaleX(-1);
+}
+.page{
+    border-radius: 10px;
+    border-color: #00BF98;
+}
+.page[style^="border-color"]::before{
+    border-radius: 10px;
+}
+@media only screen and (max-width: 1420px) {
+    .main__parallax{
+        display: none;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .page{
+        border-radius: 0px;
+    }
+    .page[style^="border-color"]::before{
+        border-radius: 0px;
+    }
+}
