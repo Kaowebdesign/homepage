@@ -5,7 +5,7 @@ $(document).ready(function() {
         // top position
         elem2TopPos = elem2.offset().top,
         // main site container
-        main = $('.main');
+        main = $('.main__loading');
     // Layers, use it for parallax speed
     var layer2s = 5,
         layer3s = 7;
