@@ -22,4 +22,4 @@ deploy:
     region: us-east-2
     acl: public_read
     on:
-      branch: main
+      branch: master
